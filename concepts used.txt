@@ -1,0 +1,13 @@
+
+List of concepts used in the project are:
+	1. Object Oriented Programming
+		a. Classes
+		b. Objects
+		c. Constructors
+		d. Inheritance
+	
+	2. Control Structures
+
+	3. Use of Multiple files
+		a. Creating header files
+ 
