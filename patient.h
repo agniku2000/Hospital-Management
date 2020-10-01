@@ -3,27 +3,27 @@
 #include<string>
 using namespace std;
 
-//Class for patient details
+//Class for patients details
 class patient
 {
 	protected:
-		  int Admit_CHARGES=1000;
-          string patient_name;
-          string address;
-		  int age;
-		  string sex,admit_ward;
-		  int opt1;
-		  int ward_no;
-	      int bed_no;
-	      int no_of_days_admitted;
-	      int charge_per_day;
-	      string blood_group;
-	      string checkup_type ;
-	      int fee;
+		int Admit_CHARGES=1500;
+          	string patient_name;
+                string address;
+       		int age;
+	        string sex,admit_ward;
+	        int opt1;
+		int ward_no;
+		int bed_no;
+		int no_of_days_admitted;
+        	int charge_per_day;
+		string blood_group;
+		string checkup_type ;
+        	int fee;
 	public:
 		void patient_menu();
-        void admit_patient();
-        void show_admit_patients();
+        	void admit_patient();
+        	void show_admit_patients();
 
 }p1;
 
@@ -43,7 +43,7 @@ void patient::patient_menu()
             {
                 case 1:
                 {
-                        admit_patient();
+                    admit_patient();
                     break;
                 }
 
@@ -54,7 +54,7 @@ void patient::patient_menu()
                 }
                 case 3:
                 {
-                    void patient_list();
+                    patient_list();
                     break;
                 }
             }
@@ -94,7 +94,7 @@ void patient::admit_patient()
 
 void patient::show_admit_patients()
 {
-		cout<<"\n -------------------------------";
+	cout<<"\n -------------------------------";
         cout<<"\n Displaying Patient Details";
         cout<<"\n -------------------------------";
         cout<<"\n Patient name :\n \t\t\t";
@@ -107,18 +107,18 @@ void patient::show_admit_patients()
         cout<<sex;
         cout<<"\n name of  admit ward :\n \t\t\t";
         cout<<admit_ward;
-		cout<<"\n Patient ward number :\n \t\t\t";
-		cout<<ward_no;
-		cout<<"\n Patient bed number :\n \t\t\t";
-		cout<<bed_no;
-		cout<<"\n number of days Patient admitted  :\n \t\t\t";
-		cout<<no_of_days_admitted;
-		cout<<"\n Patient charged per day :\n \t\t\t";
-		cout<<charge_per_day;
-		cout<<"\n blood_group :\n \t\t\t";
-		cout<<blood_group;
-		cout<<"\n checkup_type :\n \t\t\t";
-		cout<<checkup_type;
+	cout<<"\n Patient ward number :\n \t\t\t";
+	cout<<ward_no;
+	cout<<"\n Patient bed number :\n \t\t\t";
+	cout<<bed_no;
+	cout<<"\n number of days Patient admitted  :\n \t\t\t";
+	cout<<no_of_days_admitted;
+	cout<<"\n Patient charged per day :\n \t\t\t";
+	cout<<charge_per_day;
+	cout<<"\n blood_group :\n \t\t\t";
+	cout<<blood_group;
+	cout<<"\n checkup_type :\n \t\t\t";
+	cout<<checkup_type;
 }
 
 //FOR ACCOUNTS
@@ -143,7 +143,7 @@ class accounts:public patient
                     int doctor_charges =3000;
                     tl=doctor_charges+Admit_CHARGES+Discharge_fee + no_of_days_admitted*charge_per_day;
                     cout<<"your grand total is ="<<tl;
-                break;
+                    break;
                 }
 
                 case 2:
@@ -154,30 +154,30 @@ class accounts:public patient
                     break;
                 }
 
-		 	case 3:
-		 		{
+		 case 3:
+		{
                     int doctor_charges = 4000;
                     tl=doctor_charges+Admit_CHARGES+Discharge_fee + no_of_days_admitted*charge_per_day;
                     cout<<"your grand total is ="<<tl;
                     break;
                 }
 
-			case 4:
-			{
+		case 4:
+		{
                     int doctor_charges = 2500;
                     tl=doctor_charges+Admit_CHARGES+Discharge_fee + no_of_days_admitted*charge_per_day;
                     cout<<"your grand total is ="<<tl;
                     break;
-            }
+               }
 
-		   case 5 :
-		   {
-                int doctor_charges =1800;
-                tl=doctor_charges+Admit_CHARGES+Discharge_fee + no_of_days_admitted*charge_per_day;
-                cout<<"your grand total is ="<<tl;
-                break;
-            }
-		}
+                case 5 :
+	       {
+                  int doctor_charges =1800;
+                  tl=doctor_charges+Admit_CHARGES+Discharge_fee + no_of_days_admitted*charge_per_day;
+                  cout<<"your grand total is ="<<tl;
+                  break;
+               }
+	}
 
  }
  }ac1;
