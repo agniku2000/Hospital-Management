@@ -10,4 +10,6 @@ List of concepts used in the project are:
 
 	3. Use of Multiple files
 		a. Creating header files
+	
+	4. Basics of C++
  
