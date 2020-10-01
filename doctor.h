@@ -4,6 +4,8 @@
 
 using namespace std;
 
+//Doctor class for Doctors' Information working for the hospital 
+
 class doctor
 {
 	protected:
@@ -12,9 +14,10 @@ class doctor
 		string address;
 		string email;
 		int choice1;
-		public:
-			void doctor_menu()
-			{
+	public:
+		// Print Doctor Menu
+		void doctor_menu()
+		{
 			cout<<"\n <<<<<<------MENU FOR DOCTOR------>>>>>> \n";
 			cout<<"\n ENTER 1 TO ENTER DOCTOR DETIAL \n";
 			cout<<"\n ENTER 2 TO DIPLAY DOCTOR \n";

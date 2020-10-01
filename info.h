@@ -2,6 +2,9 @@
 #define INFO_H
 #include<string>
 using namespace std;
+
+///Class to store information about the hospital
+
 class information
 {
     private:
@@ -26,9 +29,9 @@ void information::info()
             case 1:
             {
                 cout<<"\n $*******************************Hosptial expenses*******************************$";
-                cout<<"\n PER DAY ROOM CHARGES 5000-RS \n PER DAY WARD CHARGES 1000-RS \n PER DAY ICU CHARGES 15000-RS \n PER DAY CCU CHARGES 10000-RS \n";
-                cout<<"\n Admit CHARGES 100-RS  ";
-                cout<<"\n Discharge fee 1000-RS";
+                cout<<"\n PER DAY ROOM CHARGES 10000-RS \n PER DAY WARD CHARGES 1000-RS \n PER DAY ICU CHARGES 15000-RS \n PER DAY CCU CHARGES 10000-RS \n";
+                cout<<"\n Admit CHARGES 500-RS  ";
+                cout<<"\n Discharge fee 1500-RS";
 			break;
             }
             case 2:
