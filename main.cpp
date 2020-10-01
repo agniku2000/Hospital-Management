@@ -35,8 +35,8 @@ int main()
             {
                 case  1:
 				{
-                    info1.info();
-                    break;
+        		            info1.info();
+                    		break;
 				}
                 case 2:
                 {
